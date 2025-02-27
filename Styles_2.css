@@ -1,0 +1,135 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+/* Контейнер резюме */
+.resume-container {
+    max-height: 1100px;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info{
+    font-size: 200px;
+}
+
+/* Ліва колонка */
+.left-side {
+    font-size: 55px;
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: left;
+}
+
+/* Фото */
+.avatar {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.image {
+	display: block;
+	width: 100%;
+}
+
+/* Ім'я та посада */
+.name {
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.position {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+/* Розділи лівої колонки */
+.left-side h2 {
+    font-size: 30px;
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.left-side p, .left-side ul {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.left-side ul {
+    list-style: none;
+}
+
+.left-side ul li {
+    padding-left: 10px;
+    position: relative;
+}
+
+.left-side ul li::before {
+    content: "•";
+    color: white;
+    position: absolute;
+    left: 0;
+}
+
+/* Права колонка */
+.right-side {
+    width: 70%;
+    background-color: white;
+    padding: 30px;
+}
+
+/* Розділи правої колонки */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 22px;
+    border-bottom: 2px solid #3a5e90;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Опис роботи */
+.job, .education {
+    margin-bottom: 15px;
+}
+
+.job h3, .education h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.job p, .education p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Курси */
+.right-side ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.right-side ul li {
+    margin-bottom: 5px;
+}
