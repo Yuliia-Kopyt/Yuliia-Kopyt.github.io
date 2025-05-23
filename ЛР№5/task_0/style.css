@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.pricing-table {
+  border: 2px solid #00cc66;
+  border-collapse: collapse;
+  text-align: center;
+  width: 250px;
+}
+
+.title {
+  background: white;
+  color: #00cc66;
+  font-size: 24px;
+  padding: 15px;
+}
+
+.price {
+  background: #00cc66;
+  color: white;
+  font-size: 32px;
+  padding: 20px 0;
+}
+
+.option {
+  background: #f9f9f9;
+  padding: 12px;
+  color: #666;
+}
+
+.option:nth-child(even) {
+  background: #fff;
+}
+
+.button-cell {
+  padding: 20px;
+  background: white;
+}
+
+.purchase-btn {
+  padding: 10px 20px;
+  border: 2px solid #00cc66;
+  background: white;
+  color: #00cc66;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.purchase-btn:hover {
+  background: #00cc66;
+  color: white;
+}

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 40px 0;
+  padding: 0;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pricing-table {
+  width: 280px;
+  border-collapse: collapse;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.header {
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.plan-name {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.tiny .header {
+  background-color: #009688;
+}
+
+.small .header {
+  background-color: #f39c12;
+}
+
+.medium .header {
+  background-color: #c0392b;
+}
+
+.content {
+  background-color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  border-style: solid;
+  border-width: 8px 2px;
+  border-radius: 0 0 4px 4px;
+  height: auto;
+}
+
+.tiny .content {
+  border-color: #00695c;
+}
+
+.small .content {
+  border-color: #c87f0a;
+}
+
+.medium .content {
+  border-color: #962d22;
+}
+
+.content p {
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.text-dark-gray {
+  color: #7f7f7f;
+}
+
+.text-gray {
+  color: #9f9f9f;
+}
+
+.line {
+  border-top: 1px dashed #999;
+  margin: 20px 0;
+}
+
+.signup-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.btn-green {
+  background-color: #009688;
+}
+
+.btn-orange {
+  background-color: #f39c12;
+}
+
+.btn-red {
+  background-color: #c0392b;
+}

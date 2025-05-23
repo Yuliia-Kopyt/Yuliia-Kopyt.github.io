@@ -1,0 +1,134 @@
+style.css:
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif; /* Встановлює шрифт для всієї сторінки */
+}
+
+img {
+	display: block; /* Забезпечує правильне відображення зображень без зайвого відступу */
+	width: 100%;
+}
+
+.page-wrapper {
+	max-width: 860px; /* Обмежує максимальну ширину контейнера */
+	width: 100%; /* Робить блок адаптивним */
+	margin: 0 auto; /* Центрує блок на сторінці */
+	padding: 30px 10px 20px; /* Встановлює внутрішні відступи */
+	background-color: #008499;
+}
+
+.content-wrap {
+	padding: 0 20px 20px;
+	background-color: #fff;
+}
+
+header {
+	height: 138px;
+	background-image: url("https://Maksym-Filvarok.github.io/project_task(ПР3)/images/header.png"); /* Додає фонове зображення */
+	background-repeat: no-repeat; /* Забороняє повторення фонового зображення */
+	background-size: contain; /* Масштабує фон так, щоб він повністю помістився */
+	background-position: center; /* Центрує фонове зображення */
+}
+
+main {
+	padding: 20px 30px; /* Встановлює внутрішні відступи */
+	font-weight: 500;
+	font-size: 1.2rem; /* Визначає розмір шрифту */
+}
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.d-block {
+	display: block;
+}
+
+.t-center {
+	text-align: center;
+}
+
+.list { 
+	padding-left: 60px; /* Встановлює відступ для списку */
+}
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+}
+
+.services-list-item {
+	width: calc(33.33% - 20px); /* Визначає ширину елементів списку */
+}
+
+.services-list-item__title {
+	padding: 15px 0; /* Встановлює відступи для заголовків */
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.btn {
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	background-color: #f53947;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+}
+
+.text-section a[href^='tel:'] {
+	color: #008499;
+	font-weight: bold;
+}
+
+.link-btn {
+	text-decoration: none;
+	color: #fff;
+	background-color: #f53947;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+footer {
+	padding: 25px 0;
+	background-color: #004d66;
+	color: #fff;
+	text-align: center;
+}
+
+.social-links {
+	font-size: 2rem;
+}
+
+.social-links a {
+	color: #fff;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+.social-links a:not(:last-child) /* Встановлює відступи між іконками соцмереж */ {
+	margin-right: 15px;
+}
+
+footer p:nth-child(2) /* Застосовується до другого параграфа у футері */ {
+	font-size: 0.9rem;
+}
+
+footer p:last-child a /* Стилізація останнього посилання у футері */ {
+	color: #ffcc00;
+	text-decoration: underline;
+}

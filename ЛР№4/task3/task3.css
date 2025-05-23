@@ -1,0 +1,25 @@
+body {
+    font-family: Times, serif;
+    text-align: center;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Відстань між лініями та текстом */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 4px;
+    background-color: black;
+    max-width: 150px;
+}

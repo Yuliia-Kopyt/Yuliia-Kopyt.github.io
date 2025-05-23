@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f5faff;
+}
+
+.data-table {
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #a0d4ef;
+  padding: 12px;
+}
+
+.data-table thead th {
+  background-color: #d0e7f7;
+  color: #222;
+  font-weight: bold;
+}
+
+.data-table tbody td:first-child {
+  background-color: #d0e7f7;
+  color: #222;
+  font-weight: bold;
+}
+
+.data-table tbody td:not(:first-child) {
+  background-color: #e9f4fb;
+  color: #555;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Casio 3234 - Два варіанти</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Версія з float -->
+        <div class="calculator-float">
+            <div class="calc-header">
+                <div class="brand">Casio 3234</div>
+                <div class="brand">Версія з float</div>
+            </div>
+            
+            <div class="display-container">
+                <input type="text" class="display" id="display-float" readonly>
+            </div>
+            
+            <div class="buttons-float">
+                <div class="row-float">
+                    <button class="btn" onclick="appendToDisplay('7', 'float')">7</button>
+                    <button class="btn" onclick="appendToDisplay('8', 'float')">8</button>
+                    <button class="btn" onclick="appendToDisplay('9', 'float')">9</button>
+                    <button class="btn operator" onclick="appendToDisplay('+', 'float')">+</button>
+                </div>
+                
+                <div class="row-float">
+                    <button class="btn" onclick="appendToDisplay('4', 'float')">4</button>
+                    <button class="btn" onclick="appendToDisplay('5', 'float')">5</button>
+                    <button class="btn" onclick="appendToDisplay('6', 'float')">6</button>
+                    <button class="btn operator" onclick="appendToDisplay('-', 'float')">-</button>
+                </div>
+                
+                <div class="row-float">
+                    <button class="btn" onclick="appendToDisplay('1', 'float')">1</button>
+                    <button class="btn" onclick="appendToDisplay('2', 'float')">2</button>
+                    <button class="btn" onclick="appendToDisplay('3', 'float')">3</button>
+                    <button class="btn operator" onclick="appendToDisplay('/', 'float')">/</button>
+                </div>
+                
+                <div class="row-float">
+                    <button class="btn" onclick="appendToDisplay('0', 'float')">0</button>
+                    <button class="btn" onclick="appendToDisplay('.', 'float')">,</button>
+                    <button class="btn equals" onclick="calculate('float')">=</button>
+                    <button class="btn operator" onclick="appendToDisplay('*', 'float')">*</button>
+                </div>
+                
+                <div class="row-float">
+                    <button class="btn clear" onclick="clearDisplay('float')">C</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Версія з position -->
+        <div class="calculator-position">
+            <div class="calc-header">
+                <div class="brand">Casio 3234</div>
+                <div class="brand">Версія з position</div>
+            </div>
+            
+            <div class="display-container">
+                <input type="text" class="display" id="display-position" readonly>
+            </div>
+            
+            <div class="buttons-position">
+    <!-- Перший ряд -->
+    <button class="btn pos-btn" style="top: 0px; left: 19px;" onclick="appendToDisplay('7', 'position')">7</button>
+    <button class="btn pos-btn" style="top: 0px; left: 89px;" onclick="appendToDisplay('8', 'position')">8</button>
+    <button class="btn pos-btn" style="top: 0px; left: 159px;" onclick="appendToDisplay('9', 'position')">9</button>
+    <button class="btn operator pos-btn" style="top: 0px; left: 229px;" onclick="appendToDisplay('+', 'position')">+</button>
+
+    <!-- Другий ряд -->
+    <button class="btn pos-btn" style="top: 55px; left: 19px;" onclick="appendToDisplay('4', 'position')">4</button>
+    <button class="btn pos-btn" style="top: 55px; left: 89px;" onclick="appendToDisplay('5', 'position')">5</button>
+    <button class="btn pos-btn" style="top: 55px; left: 159px;" onclick="appendToDisplay('6', 'position')">6</button>
+    <button class="btn operator pos-btn" style="top: 55px; left: 229px;" onclick="appendToDisplay('-', 'position')">-</button>
+
+    <!-- Третій ряд -->
+    <button class="btn pos-btn" style="top: 110px; left: 19px;" onclick="appendToDisplay('1', 'position')">1</button>
+    <button class="btn pos-btn" style="top: 110px; left: 89px;" onclick="appendToDisplay('2', 'position')">2</button>
+    <button class="btn pos-btn" style="top: 110px; left: 159px;" onclick="appendToDisplay('3', 'position')">3</button>
+    <button class="btn operator pos-btn" style="top: 110px; left: 229px;" onclick="appendToDisplay('/', 'position')">/</button>
+
+    <!-- Четвертий ряд -->
+    <button class="btn pos-btn" style="top: 165px; left: 19px;" onclick="appendToDisplay('0', 'position')">0</button>
+    <button class="btn pos-btn" style="top: 165px; left: 89px;" onclick="appendToDisplay('.', 'position')">,</button>
+    <button class="btn equals pos-btn" style="top: 165px; left: 159px;" onclick="calculate('position')">=</button>
+    <button class="btn operator pos-btn" style="top: 165px; left: 229px;" onclick="appendToDisplay('*', 'position')">*</button>
+
+    <!-- Кнопка Clear -->
+    <button class="btn clear pos-btn" style="top: 220px; left: 19px; width: 270px;" onclick="clearDisplay('position')">C</button>
+</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Моє Портфоліо</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+  <div class="container">
+    <h1>Моє Портфоліо</h1>
+    <button id="themeToggle">🌙 Темна тема</button>
+  </div>
+</header>
+
+  <main class="portfolio-grid container">
+    <div class="card">
+      <h2>ПР2. Відладка CSS-коду</h2>
+      <p>Виправлення CSS-файлів відповідно до result.png</p>
+      <a href="project1.html" class="btn">task_lemon</a>
+      <a href="project1.html" class="btn">task_mriya</a>
+    </div>
+
+    <div class="card">
+      <h2>ПР3. Робота з кодом CSS</h2>
+      <p>Додано картки до секції та змінено верстку на дворядкову.</p>
+      <a href="project1.html" class="btn">DocUA</a>
+    </div>
+
+    <div class="card">
+      <h2>ПР4. Властивості блоків</h2>
+      <p>Два варіанти верстки фігури task_box_model.png</p>
+      <a href="project1.html" class="btn">Спосіб №1</a>
+      <a href="project1.html" class="btn">Спосіб №2</a>
+    </div>
+
+    <div class="card">
+      <h2>ЛР 4. CSS Box Model</h2>
+      <p>Завдання на І рівень: task1 - task5;</p>
+      <a href="project3.html" class="btn">task_1</a>
+      <a href="project3.html" class="btn">task_2</a>
+      <a href="project3.html" class="btn">task_3</a>
+      <a href="project3.html" class="btn">task_4</a>
+      <a href="project3.html" class="btn">task_5</a>
+    </div>
+
+    <div class="card">
+      <h2>ЛР 5. CSS Box Model</h2>
+      <p>Завдання task_0 - task_3</p>
+      <a href="project3.html" class="btn">task_0</a>
+      <a href="project3.html" class="btn">task_1</a>
+      <a href="project3.html" class="btn">task_2</a>
+      <a href="project3.html" class="btn">task_3</a>
+    </div>
+
+    <div class="card">
+      <h2>ЛР 6. CSS Position</h2>
+      <p>Завдання task_3 - task_5</p>
+      <a href="project3.html" class="btn">task_3</a>
+      <a href="project3.html" class="btn">task_4</a>
+      <a href="project3.html" class="btn">task_5</a>
+    </div>
+
+    <div class="card">
+      <h2>ЛР 7. Каталог товарів</h2>
+      <p>Каталог моніторів</p>
+      <a href="project3.html" class="btn">Переглянути</a>
+    </div>
+
+    <div class="card">
+      <h2>ЛР 9-10. Landing Page + Медіа-запити</h2>
+      <p>Landing page + мобільна версія з медіа-запитами</p>
+      <a href="project3.html" class="btn">Переглянути</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kopyt Yulia</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+ <script>
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      toggleBtn.textContent = document.body.classList.contains('dark-theme') ? '☀️ Світла тема' : '🌙 Темна тема';
+    });
+  </script>
+</body>
+</html>

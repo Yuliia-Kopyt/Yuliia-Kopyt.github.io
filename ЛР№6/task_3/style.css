@@ -1,0 +1,84 @@
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Center the page */
+body {
+    text-align: center;
+    min-height: 100vh;
+    display: block;
+}
+
+/* Horizontal line for centering */
+body:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/* Main container */
+.fullwrap {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: left;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.header {
+    height: 100px;
+    background: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+}
+
+/* Content wrapper */
+.wrap {
+    margin: 10px;
+    overflow: hidden;
+}
+
+/* Main content */
+.main {
+    width: 70%;
+    height: 400px;
+    background: #2ecc71;
+    color: white;
+    text-align: center;
+    line-height: 400px;
+    float: left;
+}
+
+/* Sidebar */
+.sidebar {
+    width: calc(30% - 20px);
+    height: 400px;
+    background: #e74c3c;
+    color: white;
+    text-align: center;
+    line-height: 400px;
+    float: right;
+    margin-left: 20px;
+}
+
+/* Footer */
+.footer {
+    height: 80px;
+    background: #34495e;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    margin: 10px;
+    clear: both;
+}

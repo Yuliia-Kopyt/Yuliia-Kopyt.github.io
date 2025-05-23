@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    background: #2d2421;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-wrapper {
+    width: 1000px;
+    position: relative;
+}
+
+.menu-container {
+    display: flex;
+    height: 500px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.burger-image {
+    width: 40%;
+    background-image: url('burger-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.burger-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    background-color: #000;
+    color: white;
+    padding: 30px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.burger-title {
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.exclamation {
+    display: block;
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+.burger-price {
+    margin-top: 15px;
+    color: #FFD700;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.burger-price span {
+    color: white;
+}
+
+.menu-content {
+    width: 60%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.catchphrase {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 40px;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 12px;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background: #ccc;
+    margin: 0 auto;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.full-menu-btn {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    padding: 15px 30px;
+    background: #000;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}

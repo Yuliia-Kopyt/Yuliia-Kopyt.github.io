@@ -1,0 +1,13 @@
+.circle1 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  margin: 150px auto;
+  font-size: 32px;
+  font-family: serif;
+  text-align: center;
+  line-height: 200px;
+  box-shadow: 0 0 0 66px yellow, 0 0 0 132px blue;
+}

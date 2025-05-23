@@ -1,0 +1,27 @@
+.row {
+  clear: both;
+  overflow: hidden;
+}
+
+.cell {
+  float: left;
+  width: calc(100% / 6);
+  border: 1px solid #4CAF50;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.header .cell {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.row:nth-child(even) {
+  background-color: #ccffcc;
+}
+
+.row:nth-child(odd) {
+  background-color: #eaffea;
+}

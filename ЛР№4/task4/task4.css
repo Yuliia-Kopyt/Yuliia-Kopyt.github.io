@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.battery {
+    position: relative;
+    width: 120px;
+    height: 50px;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: white;
+}
+
+.battery::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    width: 8px;
+    height: 20px;
+    background: black;
+    transform: translateY(-50%);
+    border-radius: 2px;
+}
+
+.battery::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.red::after {
+    width: 30%;
+    background-color: red;
+}
+
+.yellow::after {
+    width: 60%;
+    background-color: yellow;
+}
+
+.green::after {
+    width: 100%;
+    background-color: green;
+}

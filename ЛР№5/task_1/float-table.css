@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5faff;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.float-table {
+  width: 80%;
+}
+
+/* Кожен рядок — окремий блок */
+.row {
+  clear: both;
+  overflow: auto;
+}
+
+/* Базові клітинки */
+.cell {
+  float: left;
+  width: 20%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #a0d4ef;
+  text-align: center;
+}
+
+/* Заголовки таблиці */
+.header .cell {
+  background-color: #d0e7f7;
+  color: #222; /* темний колір */
+  font-weight: bold;
+}
+
+/* Перший стовпець – компанії */
+.row .cell:first-child {
+  background-color: #d0e7f7;
+  color: #222; /* темний текст */
+  font-weight: bold;
+}
+
+/* Інші клітинки з числами */
+.row:not(.header) .cell:not(:first-child) {
+  background-color: #e9f4fb;
+  color: #555; /* світлий текст */
+}
