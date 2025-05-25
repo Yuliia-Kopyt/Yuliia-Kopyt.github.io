@@ -1,0 +1,164 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+.header {
+  background-color: #b5e48c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav {
+  position: relative;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #222;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #b5e48c;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    animation: slideDown 0.5s ease-in-out forwards;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.main-content {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.hero {
+  text-align: center;
+  background-color: #1b4332;
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: #1b4332;
+}
+
+.principles {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.principles h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 250px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footer {
+  background-color: #081c15;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
