@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик | MonitorShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <!-- Шапка с корзиною -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><i class="fas fa-desktop"></i> MonitorShop</h1>
+            </div>
+            <div class="cart-header">
+                <a href="index.html" id="back-to-shop">
+                    <i class="fas fa-arrow-left"></i> До покупок
+                </a>
+                <a href="#" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основний контент корзини -->
+    <main>
+        <h2 class="page-title">Ваш кошик</h2>
+        
+        <div class="cart-container">
+            <div id="cart-empty" class="cart-empty">
+                <i class="fas fa-shopping-cart fa-3x"></i>
+                <h3>Кошик порожній</h3>
+                <p>Додайте товари з каталогу</p>
+                <a href="index.html" class="btn">Перейти до покупок</a>
+            </div>
+            
+            <div id="cart-content" class="cart-content" style="display: none;">
+                <div class="cart-table-container">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Назва товару</th>
+                                <th>Ціна за одиницю</th>
+                                <th>Кількість</th>
+                                <th>Сума</th>
+                                <th>Дії</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Товари будуть додаватися сюди через JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="total">
+                        <span class="total-label">Разом до оплати:</span>
+                        <span id="cart-total" class="total-price">0 грн</span>
+                    </div>
+                    
+                    <div class="cart-actions">
+                        <button id="clear-cart" class="btn btn-danger">
+                            <i class="fas fa-trash"></i> Очистити кошик
+                        </button>
+                        <a href="index.html" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Повернутись до покупок
+                        </a>
+                        <button id="checkout" class="btn btn-primary">
+                            <i class="fas fa-credit-card"></i> Оплатити
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальне вікно оплати -->
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+            <h3>Оплата</h3>
+            <p>Дякуємо за замовлення! Сума до оплати: <span id="checkout-total">0</span> грн</p>
+            <p>Це демо-версія. У реальному магазині тут буде форма оплати.</p>
+            <div class="modal-buttons">
+                <button id="confirmCheckout" class="btn">Підтвердити</button>
+                <button id="cancelCheckout" class="btn btn-secondary">Скасувати</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
