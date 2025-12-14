@@ -1,71 +1,24 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AgroSmart Копит</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">AGROSMART <span>Копит</span></div>
-    <nav class="nav">
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">☰</label>
-      <ul class="menu">
-        <li><a href="#">Продукція</a></li>
-        <li><a href="#">Рішення</a></li>
-        <li><a href="#">Блог</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="container">
+        <h1>ToDo List</h1>
+        <input type="text" id="todoInput" placeholder="Введіть нове завдання і натисніть Enter">
 
-  <main class="main-content">
-    <section class="hero">
-      <h1>Принципи роботи</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis non nisi nonnumquam voluptas?</p>
-      <a href="#" class="btn">Ееn Now</a>
-    </section>
+        <div class="filters">
+            <button id="allBtn">Усі</button>
+            <button id="activeBtn">Невиконані</button>
+            <button id="completedBtn">Виконані</button>
+        </div>
 
-    <section class="principles">
-      <h2>Принципи роботи</h2>
-      <p class="subtitle">Lorem ipsum dolor sit amet</p>
-      <div class="cards">
-        <div class="card">
-          <h3>Тепоресте Hors</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis ornare.</p>
-        </div>
-        <div class="card">
-          <h3>Coponose Nors</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare tristique.</p>
-        </div>
-        <div class="card">
-          <h3>Coponse Nors</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique convallis.</p>
-        </div>
-        <div class="card">
-          <h3>Coporir se Mors</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat.</p>
-        </div>
-        <div class="card">
-          <h3>Copoonse Nors</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum.</p>
-        </div>
-        <div class="card image-card">
-          <img src= "https://files.nas.gov.ua/PublicMessages/Logo/0/2022/07/220721115124138-866.jpg" alt="Приклад зображення">
-        </div>
-      </div>
-    </section>
-  </main>
+        <ul id="todoList"></ul>
+    </div>
 
-  <footer class="footer">
-    <p>Майбутнє сільського господарства з Копит.</p>
-    <p>&copy; <span id="year"></span></p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
